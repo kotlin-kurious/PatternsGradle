@@ -1,6 +1,6 @@
 
 
-package barriers
+package concurrency.barriers
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.async

@@ -1,4 +1,4 @@
-package barriers
+package concurrency.barriers
 
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.async
@@ -10,7 +10,7 @@ class HomogenousBarrier {
     suspend fun main() {
         val characters: List<Deferred<FavoriteCharacter>> =
             listOf(
-                Homer .getFavoriteCharacter(),
+                Homer.getFavoriteCharacter(),
                 Chandler.getFavoriteCharacter(),
                 Rachel.getFavoriteCharacter(),
             )
